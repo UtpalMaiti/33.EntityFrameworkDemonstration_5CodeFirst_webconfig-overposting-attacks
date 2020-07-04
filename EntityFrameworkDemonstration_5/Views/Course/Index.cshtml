@@ -1,0 +1,22 @@
+﻿@model List<EntityFrameworkDemonstration_5.Models.Course>
+
+<h2>Courses...</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Duration</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var c in Model)
+        {
+            <tr>
+                <td>@c.Name</td>
+                <td>@c.DurationInDays</td>
+                <td>@c.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>
